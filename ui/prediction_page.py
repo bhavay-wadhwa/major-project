@@ -47,6 +47,12 @@ class PredictionPage:
         )
         computer_btn.pack(pady=15)
 
+    def instant_capture(self):
+
+        from ui.instant_capture_page import InstantCapturePage
+
+        self.app.navigate_to(lambda: InstantCapturePage(self.app))
+
 
     def computer_capture(self):
 
