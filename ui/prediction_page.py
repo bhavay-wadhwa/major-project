@@ -33,6 +33,20 @@ class PredictionPage:
         button_frame = tk.Frame(frame, bg="#eef6f9")
         button_frame.pack(pady=15)
 
+        # -------- Instant Capture Button --------
+        instant_btn = tk.Button(
+            button_frame,
+            text="Instant Image Capturing",
+            font=("Segoe UI", 16, "bold"),
+            bg="#2c7fb8",
+            fg="white",
+            width=25,
+            pady=12,
+            cursor="hand2",
+            command=self.instant_capture
+        )
+        instant_btn.pack(pady=15)
+
         # -------- Computer Capture Button --------
         computer_btn = tk.Button(
             button_frame,
